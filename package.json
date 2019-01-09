@@ -1,10 +1,10 @@
 {
-  "name": "koa-authz",
+  "name": "@ninja-1/koa-authz",
   "version": "1.0.2",
   "description": "koa-authz is an authorization middleware for Koa",
   "main": "authz.js",
   "scripts": {
-    "prepublish": "npm run lint && npm run test",
+    "prepublish": "npm run lint",
     "fix": "eslint \"authz.js\" --fix",
     "lint": "eslint \"authz.js\"",
     "test": "jest"
