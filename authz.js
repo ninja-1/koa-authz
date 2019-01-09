@@ -28,7 +28,7 @@ module.exports = function authz (options, Enforcer) {
         throw new Error('Please extends BasicAuthorizer class')
       }
       if (!authzorizer.checkPermission()) {
-        ctx.throw(403, "Not Authorized")
+        ctx.throw(403, 'Not Authorized')
       }
       await next()
     } catch (e) {
