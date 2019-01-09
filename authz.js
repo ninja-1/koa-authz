@@ -12,11 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-const { Enforcer } = require('casbin')
 const BasicAuthorizer = require('./BasicAuthorizer')
 
 // authz returns the authorizer, uses a Casbin enforcer as input
-module.exports = function authz (options) {
+module.exports = function authz (options, Enforcer) {
   return async (ctx, next) => {
     try {
       const {newEnforcer, authorizer} = options
